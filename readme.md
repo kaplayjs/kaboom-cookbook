@@ -2,7 +2,7 @@
 
 A place for snippets of Kaboom code
 
-![](https://cms.replit.com/assets/kajam/building.png)
+<img width=600px src="https://cms.replit.com/assets/kaboom/blocky.png"></img>
 
 ## Components 
 
