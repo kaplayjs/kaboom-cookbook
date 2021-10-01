@@ -11,6 +11,17 @@ Its parameter is a config object that takes:
 * "chance" - on a 0-1 scale what's the chance of opening actually happening when the time comes and
 * "duration" - how long, in seconds, before the close state begins
 
+### Example usage
+
+For example, an elevator game object has a sprite with an open and close animation. Every 5 seconds, there's a 100% chance it will arrive, then stay open for 3 seconds.
+
+```
+"E": () => [
+        k.sprite("elevator"),
+        openClose({ frequency: 5, chance: 1, duration: 3 }),
+        (etc.)
+```
+
 ### code
 ```
 function openClose(config) {
@@ -43,15 +54,4 @@ function openClose(config) {
     }
 
 }
-```
-
-### Example usage
-
-For example, an elevator game object has a sprite with an open and close animation. Every 5 seconds, there's a 100% chance it will arrive, then stay open for 3 seconds.
-
-```
-"E": () => [
-        k.sprite("elevator"),
-        openClose({ frequency: 5, chance: 1, duration: 3 }),
-        (etc.)
 ```
