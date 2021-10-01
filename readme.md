@@ -15,7 +15,7 @@ Kaboom Util is a npm package for import a lot of Kaboom components and plugins i
 
 ### Install
 
-NPM: `npm i kaboom-util`
+NPM: `npm i kaboom-util` <br>
 CDN: other day
 
 ### Use
