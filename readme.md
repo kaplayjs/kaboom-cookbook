@@ -8,6 +8,7 @@ A place for snippets of Kaboom code
 
 * [openClose() - A cyclic animation](https://github.com/marklovers/kaboom-cookbook/tree/main/components/openClose)
 * [blink() - Blink your objects](https://github.com/marklovers/kaboom-cookbook/tree/main/components/blink)
+* [shadow() - Give your objects a shadow that follows it](https://github.com/marklovers/kaboom-cookbook/tree/main/components/shadow)
 
 ## [Kaboom Util](https://github.com/marklovers/kaboom-util)
 
