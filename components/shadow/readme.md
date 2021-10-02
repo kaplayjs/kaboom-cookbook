@@ -7,6 +7,10 @@ Apply this component to a game object for a shadow that:
 
 It works by always "falling" until it hits a solid object (ie "the ground").
 
+## Requires
+
+A sprite called "shadow"
+
 ## Parameters
 
 None
