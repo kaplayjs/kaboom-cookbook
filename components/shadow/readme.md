@@ -4,6 +4,7 @@ Apply this component to a game object for a shadow that:
 
 * follows the object
 * respects platforms, holes, etc.
+* Gets subtly larger and smaller depending on how close the object is
 
 It works by always "falling" until it hits a solid object (ie "the ground").
 
