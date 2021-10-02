@@ -9,11 +9,12 @@ It works by always "falling" until it hits a solid object (ie "the ground").
 
 ## Requires
 
-A sprite called "shadow"
+* A sprite called "shadow"
+* A layer named "effects" that's "on top of" the floor (though you could edit the component to be anything you'd like)
 
 ## Parameters
 
-None
+* None
 
 ## Example
 
