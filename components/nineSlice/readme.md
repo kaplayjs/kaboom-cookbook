@@ -17,14 +17,19 @@ Takes a config object with the following parameters:
 ## Example
 
 ```.js
+loadSprite("balloon9Slice", "assets/balloon9.png", {
+    sliceX: 3,
+    sliceY: 3,
+}
+
 add([
-  pos(vec2(100, 100)),
-  nineSlice({
-    width: 100,
-    height: 220,
-    sprite: "balloon9",
-    tw: 32,
-    th: 32
-  })
+    pos(vec2(100, 100)),
+    nineSlice({
+        width: 100,
+        height: 220,
+        sprite: "balloon9",
+        tw: 32,
+        th: 32
+    })
 ]
 ```
