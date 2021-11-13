@@ -1,6 +1,4 @@
-import {k} from "../main.js"
-
-export function nineSlice(config) {
+function nineSlice(config) {
 
   const s = config.sprite
   const w = config.width
