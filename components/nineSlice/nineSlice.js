@@ -5,8 +5,8 @@ export function nineSlice(config) {
   const s = config.sprite
   const w = config.width
   const h = config.height
-  const tw = 32 //tile width
-  const th = 32 // tile height
+  const tw = config.tw
+  const th = config.th
 
     return {
 
