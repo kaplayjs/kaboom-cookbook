@@ -1,82 +1,81 @@
 function nineSlice(config) {
 
-  const s = config.sprite
-  const w = config.width
-  const h = config.height
-  const tw = config.tw
-  const th = config.th
+  var s = config.sprite
+  var twi = config.tw
+  var the = config.th
 
     return {
 
     id: "nineSlice",
 
     draw() {
+      var obj = this;
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 0,
-        pos: this.pos,
+        pos: vec2(0),
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 1,
-        origin: "topleft",
-        pos: k.vec2(this.pos.x + tw, this.pos.y),
-        scale: k.vec2( (w - 2 * tw) / tw , 1)
+        origin: "top",
+        pos: vec2(obj.area.width / 2, 0),
+        scale: vec2((obj.area.width - (twi * 2)) / twi, 1)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 2,
         origin: "topright",
-        pos: k.vec2(this.pos.x + w, this.pos.y)
+        pos: vec2(obj.area.width, 0)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 3,
-        origin: "topleft",
-        pos: k.vec2(this.pos.x, this.pos.y + 32),
-        scale: k.vec2(1, (h - 2 * th) / th)
+        origin: "left",
+        pos: vec2(0, obj.area.height / 2),
+        scale: vec2(1, (obj.area.height - (the * 2)) / the)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 4,
-        origin: "topleft",
-        pos: k.vec2(this.pos.x + tw, this.pos.y + th),
-        scale: k.vec2( (w - 2 * tw) / tw , (h - 2 * th) / th)
+        origin: "center",
+        pos: vec2(obj.area.width / 2, obj.area.height / 2),
+        scale: vec2((obj.area.width - (twi * 2)) / twi, (obj.area.height - (the * 2)) / the)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 5,
-        origin: "topright",
-        pos: k.vec2(this.pos.x + w, this.pos.y + th),
-        scale: k.vec2(1, (h - 2 * th) / th)
+        origin: "right",
+        pos: vec2(obj.area.width, obj.area.height / 2),
+        scale: vec2(1, (obj.area.height - (the * 2)) / the)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 6,
         origin: "botleft",
-        pos: k.vec2(this.pos.x, this.pos.y + h)
+        pos: vec2(0, obj.area.height)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 7,
-        origin: "botleft",
-        pos: k.vec2(this.pos.x + 32, this.pos.y + h),
-        scale: k.vec2( (w - 2 * tw) / tw , 1)
+        origin: "bot",
+        pos: vec2(obj.area.width / 2, obj.area.height),
+        scale: vec2((obj.area.width - (twi * 2)) / twi, 1)
       })
 
-      k.drawSprite({
+      drawSprite({
         sprite: s,
         frame: 8,
         origin: "botright",
-        pos: k.vec2(this.pos.x + w, this.pos.y + h)
+        pos: vec2(obj.area.width, obj.area.height)
       })
 
     }
