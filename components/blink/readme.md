@@ -8,7 +8,7 @@ You can create interplations between the visible object and the invisible object
 
 ## Example
 
-```.js
+```js
 const playText = add([
     text("Press any key for start"),
     pos(center()),
