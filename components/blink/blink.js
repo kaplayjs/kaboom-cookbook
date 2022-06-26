@@ -1,15 +1,21 @@
-function blink(time) {
+function blinkComponent(k) {
     return {
-        id: "blink",
-        require: [],
-        add() {
-            if(this.loopBlink) this.loopBlink();
-        
-            this.loopBlink = loop(time, (time) => {
-                if(!time) time = 0.3;
+        blink(time) {
+            return {
+                id: "blink",
+                require: [],
+                add() {
+                    if (this.loopBlink) this.loopBlink();
 
-                this.hidden = !this.hidden;
-            });
-        }
+                    this.loopBlink = k.loop(time, (time) => {
+                        if (!time) time = 0.3;
+
+                        this.hidden = !this.hidden;
+                    });
+                },
+            };
+        },
     };
-};
+}
+
+export default blinkComponent;

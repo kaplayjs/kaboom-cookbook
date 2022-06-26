@@ -4,31 +4,14 @@ A place for snippets of Kaboom code
 
 <img width=600px src="https://cms.replit.com/assets/kaboom/blocky.png"></img>
 
-## Components 
+\* _old code not valid in kaboom 2000_
 
-* [openClose() - A cyclic animation](https://github.com/marklovers/kaboom-cookbook/tree/main/components/openClose)
-* [blink() - Blink your objects](https://github.com/marklovers/kaboom-cookbook/tree/main/components/blink)
-* [shadow() - Give your objects a shadow that follows it](https://github.com/marklovers/kaboom-cookbook/tree/main/components/shadow)
+## Stable Components
 
-## [Kaboom Util](https://github.com/marklovers/kaboom-util)
+-   [openClose() - A cyclic animation](./components/openClose/readme.md)
+-   [blink() - Blink your objects](./components/blink/readme.md)
+-   [shadow() - Give your objects a shadow that follows it](./components/shadow/readme.md)
 
-Kaboom Util is a npm package for import a lot of Kaboom components and plugins in only one import
+## Use
 
-### Install
-
-NPM: `npm i kaboom-util` <br>
-CDN: other day
-
-### Use
-
-```.js
-import kaboom from "kaboom";
-import kutil from "kaboom-util";
-
-kaboom();
-
-const obj = add([
-    rect(4, 4),
-    kutil.blink(5)
-]);
-```
+`we are working in a way to load components with 1 imports, kaboom-util`

@@ -8,15 +8,15 @@ See PixiJS for a similar implementation: https://pixijs.download/dev/docs/PIXI.N
 
 Takes a config object with the following parameters:
 
-- `width` - the desired width for the graphic
-- `height` - the desired height for the graphic
-- `sprite` - the string for the loaded sprite (must have alreaday been loaded using `loadSprite()`)
-- `tw` - the width of each tile
-- `th` - the height of each tile
+-   `width` - the desired width for the graphic
+-   `height` - the desired height for the graphic
+-   `sprite` - the string for the loaded sprite (must have alreaday been loaded using `loadSprite()`)
+-   `tw` - the width of each tile
+-   `th` - the height of each tile
 
 ## Example
 
-```.js
+```js
 loadSprite("balloon9Slice", "assets/balloon9.png", {
     sliceX: 3,
     sliceY: 3,
