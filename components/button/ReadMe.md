@@ -37,7 +37,7 @@ button.on("onHoverStart", () => {
 	button.scale = 2;
 });
 
-button.on("onHoverLeave", () => {
+button.on("onHoverEnd", () => {
 	button.scale = 1;
 })
   
